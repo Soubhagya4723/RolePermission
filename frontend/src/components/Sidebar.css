@@ -1,0 +1,132 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* ================= BRAND ================= */
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-icon {
+  font-size: 20px;
+}
+
+.brand-text {
+  font-size: 18px;
+}
+
+/* ================= MENU ================= */
+.sidebar-menu {
+  padding: 10px 8px;
+  flex: 1;
+  overflow: hidden; /* no sidebar scroll */
+}
+
+.sidebar-item {
+  padding: 10px 14px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #cbd5f5;
+  transition: background 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-item.active {
+  background: rgba(99, 102, 241, 0.25);
+  color: #ffffff;
+}
+
+/* ================= USER AREA ================= */
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Avatar */
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* User info */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.user-name {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: capitalize;
+}
+
+/* ================= LOGOUT ================= */
+.sidebar-dropdown {
+  padding: 10px;
+  background: #020617;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gray Logout Button */
+.sidebar-dropdown button {
+  width: 100%;
+  padding: 10px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sidebar-dropdown button:hover {
+  background: #d1d5db;
+}

@@ -1,0 +1,145 @@
+/* ================= OVERLAY ================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* ================= MODAL BOX ================= */
+.modal-box {
+  width: 560px;
+  max-height: 80vh;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ================= HEADER ================= */
+.modal-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+}
+
+.modal-header button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* ================= BODY ================= */
+.modal-body {
+  padding: 18px 20px 20px; /* 👈 exact vertical balance */
+  overflow-y: auto;
+}
+
+/* ================= ROLE NAME ================= */
+.form-group {
+  margin-bottom: 16px; /* 👈 same as reference */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ================= PERMISSION CARD ================= */
+.permission-section {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 14px; /* 👈 THIS IS THE KEY GAP */
+}
+
+.permission-section:last-child {
+  margin-bottom: 0;
+}
+
+.permission-section h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ================= CHECKBOX LAYOUT ================= */
+.permission-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.permission-row label,
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: #444;
+  cursor: pointer;
+}
+
+/* ================= CHECKBOX ================= */
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #6c63ff;
+}
+
+/* ================= FOOTER ================= */
+.modal-footer {
+  padding: 14px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background: #fafafa;
+}
+
+.modal-footer .cancel {
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal-footer .create {
+  background: #6c63ff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}

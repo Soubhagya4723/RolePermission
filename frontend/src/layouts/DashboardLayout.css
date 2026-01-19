@@ -1,0 +1,8 @@
+.page-wrapper {
+  margin-left: 240px;               /* sidebar width */
+  min-height: 100vh;
+  width: calc(100% - 240px);        /* 🔥 IMPORTANT */
+  padding: 24px;
+  background: #f5f7fb;
+  overflow-x: hidden;
+}  

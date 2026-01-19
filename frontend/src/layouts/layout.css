@@ -1,0 +1,31 @@
+/* ================= ROOT ================= */
+.app-layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  z-index: 100;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+  margin-left: 240px; /* 🔥 FIX OVERLAY */
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  background: #f5f7fb;
+}
+
+/* ================= PAGE CONTENT ================= */
+.page-content {
+  padding: 24px;
+}

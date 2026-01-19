@@ -1,0 +1,45 @@
+/* ===== PAGE ===== */
+.teams-page {
+  padding: 24px;
+  margin-left: 240px;
+}
+
+/* ===== HEADER ===== */
+.teams-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teams-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ===== ADD BUTTON ===== */
+.add-team-btn {
+  background: #0ea5e9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-team-btn:hover {
+  background: #0284c7;
+}
+
+/* ===== EMPTY STATE ===== */
+.teams-empty {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}

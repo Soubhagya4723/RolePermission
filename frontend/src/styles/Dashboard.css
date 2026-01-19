@@ -1,0 +1,98 @@
+/* ================= PAGE ================= */
+.dashboard-page {
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  margin-left: 240px;
+}
+
+/* ================= WELCOME ================= */
+.dashboard-welcome {
+  margin-bottom: 24px;
+}
+
+.dashboard-welcome h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dashboard-welcome p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================= CARD ================= */
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.dashboard-card p {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ================= LISTS ================= */
+.dashboard-card ul,
+.dashboard-card ol {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.dashboard-card li {
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* ================= FEATURES GRID ================= */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.feature-box {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.feature-box h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #111827;
+}
+
+.feature-box p {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding: 16px;
+  }
+
+  .dashboard-card {
+    padding: 18px;
+  }
+}

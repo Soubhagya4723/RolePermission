@@ -1,0 +1,48 @@
+.add-role-page {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.add-role-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.permission-group {
+  margin-bottom: 20px;
+}
+
+.permissions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.add-role-footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.create {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+.cancel {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
