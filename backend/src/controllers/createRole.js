@@ -46,7 +46,7 @@ export const createRoleWithPermissions = async (req, res) => {
         "SELECT id FROM permissions WHERE name = $1",
         [permName]
       );
-
+      console.log("this")
       if (!permRes.rowCount) {
         await client.query("ROLLBACK");
         return res.status(404).json({
